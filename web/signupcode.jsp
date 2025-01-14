@@ -15,7 +15,7 @@
     
     
 Class.forName("com.mysql.jdbc.Driver");
-    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","Sonali@309");
+    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/pathToDatabase","*****","******");
     
 PreparedStatement st=con.prepareStatement("insert into signup(name,emailid,password,DOB,AadharCard,address,mobileno,gender,city) values(?,?,?,?,?,?,?,?,?)");
     st.setString(1,fullname);
