@@ -97,7 +97,7 @@
     
     
 Class.forName("com.mysql.jdbc.Driver");
-    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root","Sonali@309");
+    Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/pathToDatabase","*****","******");
 
     PreparedStatement st=con.prepareStatement("insert into organ(username,contactno,medical,age,organ,hospital,dateofdonation) values(?,?,?,?,?,?,?)");
     st.setString(1,userName);
